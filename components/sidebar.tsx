@@ -3,8 +3,7 @@
 
 import { Button } from '@/components/ui/button'
 import SidebarSkeleton from './sidebar-skeleton'
-
-
+import { ArrowLeft } from 'lucide-react';
 
 interface SidebarProps {
   loading?: boolean;
@@ -28,6 +27,10 @@ export default function Sidebar({ loading, data, categoryClickHandler} :SidebarP
 
   return (
     <aside className="w-64 fixed top-16 left-0 bottom-0 p-4 bg-white border-r overflow-y-auto hidden lg:block">
+      <Button variant="outline" className="w-full my-5 justify-start">
+        <ArrowLeft />
+        All Resturents
+      </Button>
       <nav className="space-y-1">
         <h2 className="text-xl font-semibold mb-4">Menu</h2>
         {data?.categories?.map((item: any) => (

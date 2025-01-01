@@ -6,14 +6,16 @@ import { gql, useQuery } from '@apollo/client';
 import Link from 'next/link';
 
 const GET_CATEGORIES = gql`
-  query Query {
+  query Shop {
     shops {
       id
       name
+      logo
       description
       businessHour
       location
       estDeliveryTime
+      isClosed
     }
   }
 `;

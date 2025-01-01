@@ -100,7 +100,7 @@ const { loading, error, data } = useQuery(GET_SINGLE_SHOP, { variables: {shopId}
           />
           <div className="m-2 ">
             {shop?.categories?.map((category: any) => (
-              <div key={category?.id} id={category.id}>
+              <div key={category?.id} id={category.id} className="my-10">
                 <h1 className="text-2xl font-bold mb-6">{category?.title}</h1>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                   {loading

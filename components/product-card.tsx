@@ -5,16 +5,16 @@ import { Card, CardContent, CardFooter } from '@/components/ui/card'
 interface ProductCardProps {
   name: string
   price: number
-  image: string
+  images: string
 }
 
-export default function ProductCard({ name, price, image }: ProductCardProps) {
+export default function ProductCard({ name, price, images }: ProductCardProps) {
   return (
     <Card className="overflow-hidden">
       <CardContent className="p-4">
         <div className="aspect-square relative mb-4">
           <Image
-            src={image}
+            src={images[0]}
             alt={name}
             fill
             className="object-cover rounded-lg"
