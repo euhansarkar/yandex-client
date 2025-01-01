@@ -5,7 +5,7 @@ import { AppProgressBar } from "next-nprogress-bar";
 
 
 const client = new ApolloClient({
-  uri: "http://localhost:4000",
+  uri: "https://yandex.hitchmi.com",
   cache: new InMemoryCache(),
 });
 
